@@ -14,6 +14,8 @@ import { CourseComponent } from './course/course.component';
 import { courseService } from 'src/services/couseservice';
 import { AddcourseComponent } from './addcourse/addcourse.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddmoduleComponent } from './addmodule/addmodule.component';
+import { AddlessonComponent } from './addlesson/addlesson.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     ShelpComponent,
     CourseComponent,
     AddcourseComponent,
+    AddmoduleComponent,
+    AddlessonComponent,
     
   ],
   imports: [

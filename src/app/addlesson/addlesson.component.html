@@ -2,21 +2,17 @@
     <div class="modal-dialog ">
         <div class="modal-content ">
             <div class="modal-header ">
-                <h1 class="modal-title fs-5">Add Course</h1>
+                <h1 class="modal-title fs-5">Add Lesson</h1>
             </div>
             <div class="modal-body py-0">
                 <br />
-                Enter course title:
+                Enter Lesson title:
                 <input [(ngModel)]="title">
-                <br />
-                <br />
-                Enter course author:
-                <input [(ngModel)]="author">
-                <br />
+                <br/>
             </div>
             <div class="modal-footer flex-column border-top-0">
                 <button type="button" class="btn btn-lg btn-primary "
-                    (click)="addcourse(title,author)">Save </button>
+                    (click)="addlesson(title)">Save </button>
             </div>
         </div>
     </div>

@@ -1,27 +1,16 @@
 
-<div layout="column" layout-align="center center">
-  <h1 style="font-size:40px"> Student Application </h1>
+<div class="header">    
+  <h2><label class="heading">Student Application </label></h2>    
 </div>
 
-
-<a routerLink="/login">
-  login
-</a>
-
-<a routerLink="/register">
-  register
-</a>
-
-<a routerLink="/profile">
-  profile
-</a>
-<a routerLink="/course">
-  Course
-</a>
-
-<a routerLink="/shelp">
-  help
-</a>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <nav>
+    <a routerLink="/login" class="aOne"> Login</a>
+    <a routerLink="/register" class="aTwo">Register</a>
+    <a routerLink="/profile" class="aThree">Profile</a>
+    <a routerLink="/course" class="aFour">Course</a>
+    <a routerLink="/shelp" class="aFive">Help</a>
+    <router-outlet></router-outlet>
+</nav>
+</div>
 

@@ -11,6 +11,8 @@ export class CourseComponent implements OnInit {
   courses: any;
   title: any;
   author: any;
+  public static courseid: any;
+  public static moduleid: any;
 
 
   selectLesson(lesson: any){
@@ -29,10 +31,15 @@ export class CourseComponent implements OnInit {
 
 selectModule(module: any) {
 this.selectedModule = module;
+  CourseComponent.moduleid = module.id;
+  console.log("Selecetd Module : ",CourseComponent.moduleid)
 }
 
 selectCourse(course: any) {
   this.selectedCourse = course;
+
+  CourseComponent.courseid = course.id;
+  console.log("SELECTED COURSE : ",CourseComponent.courseid);
 }
 selectedCourse = {
   modules:[] as any[],
