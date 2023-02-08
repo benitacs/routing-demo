@@ -24,6 +24,7 @@ export class AddmoduleComponent implements OnInit {
     //const course = {title,}
     //this.id = 5//this.coursecomponent.selectedCourse.id
 
+    console.log("Add Module with Course id = ",this.id," and Title : ",title);
     this.courseservice.addmodule(title, this.id);
   
   }
